@@ -4,6 +4,7 @@ import { View, Button, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from './screens/LoginScreen';
+import IndexScreen from './screens/IndexScreen';
 
 function HomeScreen({ navigation }) {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Accueil" component={HomeScreen} />
         <Stack.Screen name="Se connecter" component={LoginScreen} />
+        <Stack.Screen name="Index" component={IndexScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
