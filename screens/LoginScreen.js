@@ -13,7 +13,7 @@ function LoginScreen({ navigation, props }) {
         value={email}
       />
       <Text>Mot de passe :</Text>
-      <TextInput style={styles.email}
+      <TextInput secureTextEntry={true} style={styles.default} value="abc"  style={styles.email}
         placeholder="Entrez ici votre mot de passe"
         onChangeText={(text) => onChangePassword(text)}
         value={password}
