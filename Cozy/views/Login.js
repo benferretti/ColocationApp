@@ -25,7 +25,8 @@ export default function Login({homeStyle, navigation})
             <Text style={styles.label}>Restez connecter?</Text>
         </View>
         <Button
-            title = "Connexion">
+            title = "Connexion"
+            onPress= {() => navigation.navigate("Home")}>
         </Button>
         <Button
             title = "Retour"
